@@ -1,0 +1,142 @@
+.share-modal-card {
+  width: 480px;
+  background-color: var(--bg-elevated);
+}
+
+.share-modal-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.share-modal-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.share-modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-buttons-row {
+  display: flex;
+  gap: 12px;
+  justify-content: space-around;
+}
+
+.social-platform-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: transform 0.1s ease, background-color 0.2s;
+  flex: 1;
+}
+
+.social-platform-btn:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.platform-icon {
+  font-size: 1.4rem;
+}
+
+.copy-link-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 6px 10px;
+  gap: 10px;
+}
+
+.copy-link-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.share-dm-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.share-dm-section h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.share-users-list {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.share-user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.share-user-item:hover, .share-user-item.selected {
+  background-color: var(--bg-secondary);
+}
+
+.share-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.share-user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.share-username {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.share-fullname {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.send-share-dm-btn {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+}

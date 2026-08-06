@@ -1,0 +1,72 @@
+.edit-profile-card {
+  width: 500px;
+  background-color: var(--bg-elevated);
+}
+
+.edit-profile-header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.edit-profile-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.edit-profile-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.avatar-edit-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--bg-secondary);
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+
+.edit-avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.change-photo-btn {
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 14px;
+  outline: none;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.submit-edit-btn {
+  margin-top: 10px;
+  align-self: flex-end;
+}

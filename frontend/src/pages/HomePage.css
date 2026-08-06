@@ -1,0 +1,130 @@
+.home-layout {
+  display: flex;
+  gap: 64px;
+  max-width: 835px;
+  width: 100%;
+}
+
+.feed-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suggestions-column {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+@media (max-width: 1000px) {
+  .suggestions-column {
+    display: none;
+  }
+}
+
+.current-user-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.fullname {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.switch-btn, .follow-btn {
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.switch-btn:hover, .follow-btn:hover {
+  color: var(--accent-blue-hover);
+}
+
+.suggestions-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.see-all {
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.suggested-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.suggested-user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.empty-feed {
+  padding: 40px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--border-color);
+  border-top-color: var(--accent-blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

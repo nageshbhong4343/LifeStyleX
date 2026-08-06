@@ -1,0 +1,15 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  min-height: 100vh;
+}
