@@ -41,11 +41,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (username, password) => {
-    const formData = new FormData();
-    formData.append('username', username);
-    formData.append('password', password);
-
-    const res = await API.post('/auth/login', formData);
+    const res = await API.post('/auth/login', { username, password });
     localStorage.setItem('token', res.data.access_token);
     setUser(res.data.user);
     return res.data.user;

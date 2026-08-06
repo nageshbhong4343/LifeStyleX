@@ -40,10 +40,14 @@ def register(user_in: UserCreate, db: Session = Depends(get_db)):
         user=UserResponse.model_validate(user)
     )
 
+from app.schemas.user import UserCreate, UserLogin, UserResponse, Token
+
 @router.post("/login", response_model=Token)
-def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.username == form_data.username).first()
-    if not user or not verify_password(form_data.password, user.hashed_password):
+def login(login_in: UserLogin, db: Session = Depends(get_db)):
+    user = db.query(User).filter(
+        (User.username == login_in.username) | (User.email == login_in.username)
+    ).first()
+    if not user or not verify_password(login_in.password, user.hashed_password):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect username or password"
