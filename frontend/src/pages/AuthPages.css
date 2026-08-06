@@ -107,17 +107,16 @@
   background-color: var(--border-color);
 }
 
-.demo-hint {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  background-color: var(--bg-secondary);
-  padding: 10px 14px;
-  border-radius: 8px;
+.quick-demo-btn {
   width: 100%;
+  padding: 10px;
+  background: var(--story-ring-gradient);
+  color: #fff;
+  border: none;
+  font-weight: 600;
 }
-
-.demo-hint code {
-  color: var(--accent-blue);
+.quick-demo-btn:hover {
+  opacity: 0.9;
 }
 
 .auth-switch-card {
